@@ -1,0 +1,52 @@
+/*cancel out browser defaults*/
+
+body{
+    font-family: Oswald, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+display: flex;
+height: 80px;
+width: 100%;
+background-color: #5a0e0e;
+}
+
+nav .Spitfire{
+height: 100%;
+padding: 10px;
+}
+
+nav .Spitfire img{
+    height: 100%;
+}
+nav ul{
+    display: flex;
+    flex-grow: 1;
+    list-style: none;
+    height: 100%;
+}
+
+nav ul li a{
+    color: #faebd7;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 80px;
+    display: inline-block;
+    width: 200px ;
+    text-align: center;
+}
+
+nav ul li{
+    height: 100%;
+    width: 100%;
+}
+
+nav ul li a:hover{
+background-color: #dfbd13;
+}
