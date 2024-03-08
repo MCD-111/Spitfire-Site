@@ -10,29 +10,32 @@ body{
     padding: 0;
 }
 
-nav{
+/*header styling*/
+
+header nav{
 display: flex;
 height: 80px;
 width: 100%;
 background-color: #5a0e0e;
 }
 
-nav .Spitfire{
+header nav .Spitfire{
 height: 100%;
 padding: 10px;
 }
 
-nav .Spitfire img{
+header nav .Spitfire img{
     height: 100%;
 }
-nav ul{
+
+header nav ul{
     display: flex;
     flex-grow: 1;
     list-style: none;
     height: 100%;
 }
 
-nav ul li a{
+header nav ul li a{
     color: #faebd7;
     text-decoration: none;
     font-size: 20px;
@@ -42,11 +45,106 @@ nav ul li a{
     text-align: center;
 }
 
-nav ul li{
+header nav ul li{
     height: 100%;
     width: 100%;
 }
 
-nav ul li a:hover{
+header nav ul li a:hover{
 background-color: #dfbd13;
+}
+
+/*main area styling*/
+
+.maindiv{
+    display: flex;
+}
+
+main{
+flex: 5;
+}
+
+aside{
+flex: 1;
+}
+
+main section{
+    display: flex;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+main section div{
+    flex: 1;
+}
+
+main section h2, main section p{
+    padding: 20px 50px 0px;
+}
+
+.SpitBoB img{
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*sidebar styling*/
+
+aside{
+    flex: 1;
+    background-color: #485763;
+    padding: 20px 50px;
+}
+
+aside ul{
+list-style: none;
+margin-top: 10px;
+}
+
+aside ul li{
+    margin-bottom: 10px;
+}
+
+aside a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*footer styling*/
+
+footer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: #5a0e0e;
+    padding: 0px 20px;
+}
+
+footer div{
+    flex: 1;
+}
+
+footer nav ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+footer nav ul li{
+    margin-bottom: 20px;
+}
+
+footer nav ul li a{
+    color: #faebd7;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover{
+   color: #dfbd13;
+    }
+
+footer img{
+    width: 100%;
 }
